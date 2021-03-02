@@ -1,14 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AnimationModule;
 
 public class Player : MonoBehaviour
 {
     public float speed = 1f;
-    public Animator animator;
+    public Animator anim;
     void Start()
     {
-        animator = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
